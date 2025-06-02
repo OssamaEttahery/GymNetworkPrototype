@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script async
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbXVb-RB2gYXR6QE9u5JE9XwZDDBABNoY&callback=initMap">
+    </script>
+
+    <style>
+      gmp-map {
+        height: 400px;
+        width: 100%;
+      }
+    </style>
+    <script>
+      /*function initMap() {
+        const center = { lat: 40.7128, lng: -74.0060 }; // e.g., New York
+
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 10,
+          center: center,
+          disableDefaultUI: true,
+            styles: [
+                {
+                featureType: "all",
+                elementType: "labels",
+                stylers: [{ visibility: "off" }],
+                },
+                {
+                featureType: "road",
+                elementType: "geometry",
+                stylers: [{ color: "#eeeeee" }],
+                },
+                {
+                featureType: "landscape",
+                elementType: "geometry",
+                stylers: [{ color: "#f7f7f7" }],
+                },
+            ],
+        });
+
+        const locations = [
+          { lat: 40.7128, lng: -74.0060, title: "New York" },
+          { lat: 40.730610, lng: -73.935242, title: "Brooklyn" },
+        ];
+
+        locations.forEach(loc => {
+          new google.maps.Marker({
+            position: { lat: loc.lat, lng: loc.lng },
+            map: map,
+            title: loc.title,
+          });
+        });
+      }*/
+    </script>
+  </head>
+  <body>
+    <h3>Our Locations</h3>
+    <div id="map"></div>
+    <gmp-map center="37.4220656,-122.0840897" zoom="10" map-id="DEMO_MAP_ID" style="height: 400px"></gmp-map>
+  </body>
+</html>
